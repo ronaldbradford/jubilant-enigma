@@ -9,7 +9,7 @@ before_install:
   - |
     sudo add-apt-repository ppa:duggan/bats
     sudo apt-get update
-    sudo apt-get install bats
+    sudo apt-get install -y bats
 
 script:
   bats test.bats
@@ -19,3 +19,7 @@ notifications:
     recipients
     - ronald.bradford+travis@gmail.com
     on_success: always
+
+git:
+  depth: false
+  quiet: true
