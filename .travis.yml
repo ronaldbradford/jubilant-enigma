@@ -3,6 +3,11 @@ language: bash
 os:
 - linux
 
+before_install:
+  apt-repository ppa:duggan/bats
+  apt-get update
+  apt-get install bats
+
 script:
   bats test.bats
 
