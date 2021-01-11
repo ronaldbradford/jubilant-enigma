@@ -1,7 +1,9 @@
-language: bash
+language: shell
 
 os:
 - linux
+
+dist: xenial
 
 before_install:
   - |
@@ -14,4 +16,6 @@ script:
 
 notifications:
   email:
-    on_success: ronald.bradford+travis@gmail.com
+    recipients
+    - ronald.bradford+travis@gmail.com
+    on_success: always
