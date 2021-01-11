@@ -3,11 +3,6 @@ language: bash
 os:
 - linux
 
-addons:
-  apt:
-    packages:
-      bats-core
-
 script:
   bats test.bats
 
