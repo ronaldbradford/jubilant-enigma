@@ -1,0 +1,16 @@
+language: bash
+
+os:
+- linux
+
+addons:
+  apt:
+    packages:
+      bats-core
+
+script:
+  bats test.bats
+
+notifications:
+  email:
+    on_success: ronald.bradford+travis@gmail.com
